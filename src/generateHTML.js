@@ -1,0 +1,111 @@
+function generateHTML(data){
+    return `
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <title>My Team</title>
+</head>
+
+<body>
+    <main>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">My Team</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="card m-4" style="width: 18rem;">
+                    <div class="card-body bg-primary">
+                        <h5 class="card-title">Name</h5>
+                        <h6 class="card-subtitle mb-2"><i class="bi bi-briefcase"></i> Manager</h6>
+                    </div>
+
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ID:</li>
+                            <li class="list-group-item">Email: <a href="mailto:"></a></li>
+                            <li class="list-group-item">Office Number:</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card m-4" style="width: 18rem;">
+                    <div class="card-body bg-primary">
+                        <h5 class="card-title">Name</h5>
+                        <h6 class="card-subtitle mb-2"><i class="bi bi-sunglasses"></i> Engineer</h6>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ID:</li>
+                            <li class="list-group-item">Email:</li>
+                            <li class="list-group-item">Github: <a href="github.com/" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card m-4" style="width: 18rem;">
+                    <div class="card-body bg-primary">
+                        <h5 class="card-title">Name</h5>
+                        <h6 class="card-subtitle mb-2"><i class="bi bi-sunglasses"></i> Engineer</h6>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ID:</li>
+                            <li class="list-group-item">Email:</li>
+                            <li class="list-group-item">Github: <a href="github.com/" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card m-4" style="width: 18rem;">
+                    <div class="card-body bg-primary">
+                        <h5 class="card-title">Name</h5>
+                        <h6 class="card-subtitle mb-2"><i class="bi bi-sunglasses"></i> Engineer</h6>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ID:</li>
+                            <li class="list-group-item">Email:</li>
+                            <li class="list-group-item">Github: <a href="github.com/" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card m-4" style="width: 18rem;">
+                    <div class="card-body bg-primary">
+                        <h5 class="card-title">Name</h5>
+                        <h6 class="card-subtitle mb-2"><i class="bi bi-journal-bookmark-fill"></i> Intern</h6>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ID:</li>
+                            <li class="list-group-item">Email: <a href="mailto:"></a></li>
+                            <li class="list-group-item">School:</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+    `;
+}
