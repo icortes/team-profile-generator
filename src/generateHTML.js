@@ -25,71 +25,71 @@ function generateHTML(data){
 
                 <div class="card m-4" style="width: 18rem;">
                     <div class="card-body bg-primary">
-                        <h5 class="card-title">Name</h5>
-                        <h6 class="card-subtitle mb-2"><i class="bi bi-briefcase"></i> Manager</h6>
+                        <h5 class="card-title">${data[0].getName()}</h5>
+                        <h6 class="card-subtitle mb-2"><i class="bi bi-briefcase"></i> ${data[0].getRole()}</h6>
                     </div>
 
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID:</li>
-                            <li class="list-group-item">Email: <a href="mailto:"></a></li>
-                            <li class="list-group-item">Office Number:</li>
+                            <li class="list-group-item">ID: ${data[0].getId()}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${data[0].getEmail()}">${data[0].getEmail()}</a></li>
+                            <li class="list-group-item">Office Number: ${data[0].getOfficeNumber()}</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="card m-4" style="width: 18rem;">
                     <div class="card-body bg-primary">
-                        <h5 class="card-title">Name</h5>
-                        <h6 class="card-subtitle mb-2"><i class="bi bi-sunglasses"></i> Engineer</h6>
+                        <h5 class="card-title">${data[1].getName()}</h5>
+                        <h6 class="card-subtitle mb-2"><i class="bi bi-sunglasses"></i> ${data[1].getRole()}</h6>
                     </div>
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID:</li>
-                            <li class="list-group-item">Email:</li>
-                            <li class="list-group-item">Github: <a href="github.com/" target="_blank"></a></li>
+                            <li class="list-group-item">ID: ${data[1].getId()}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${data[1].getEmail()}">${data[1].getEmail()}</a></li>
+                            <li class="list-group-item">Github: <a href="https://github.com/${data[1].getGithub()}" target="_blank">${data[1].getGithub()}</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="card m-4" style="width: 18rem;">
                     <div class="card-body bg-primary">
-                        <h5 class="card-title">Name</h5>
-                        <h6 class="card-subtitle mb-2"><i class="bi bi-sunglasses"></i> Engineer</h6>
+                        <h5 class="card-title">${data[2].getName()}</h5>
+                        <h6 class="card-subtitle mb-2"><i class="bi bi-sunglasses"></i> ${data[2].getRole()}</h6>
                     </div>
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID:</li>
-                            <li class="list-group-item">Email:</li>
-                            <li class="list-group-item">Github: <a href="github.com/" target="_blank"></a></li>
+                            <li class="list-group-item">ID: ${data[2].getId()}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${data[2].getEmail()}">${data[2].getEmail()}</a></li>
+                            <li class="list-group-item">Github: <a href="https://github.com/${data[2].getGithub()}" target="_blank">${data[2].getGithub()}</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="card m-4" style="width: 18rem;">
                     <div class="card-body bg-primary">
-                        <h5 class="card-title">Name</h5>
-                        <h6 class="card-subtitle mb-2"><i class="bi bi-sunglasses"></i> Engineer</h6>
+                        <h5 class="card-title">${data[3].getName()}</h5>
+                        <h6 class="card-subtitle mb-2"><i class="bi bi-sunglasses"></i> ${data[3].getRole()}</h6>
                     </div>
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID:</li>
-                            <li class="list-group-item">Email:</li>
-                            <li class="list-group-item">Github: <a href="github.com/" target="_blank"></a></li>
+                            <li class="list-group-item">ID: ${data[3].getId()}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${data[3].getEmail()}">${data[3].getEmail()}</a></li>
+                            <li class="list-group-item">Github: <a href="https://github.com/${data[3].getGithub()}" target="_blank">${data[3].getGithub()}</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="card m-4" style="width: 18rem;">
                     <div class="card-body bg-primary">
-                        <h5 class="card-title">Name</h5>
-                        <h6 class="card-subtitle mb-2"><i class="bi bi-journal-bookmark-fill"></i> Intern</h6>
+                        <h5 class="card-title">${data[4].getName()}</h5>
+                        <h6 class="card-subtitle mb-2"><i class="bi bi-journal-bookmark-fill"></i> ${data[4].getRole()}</h6>
                     </div>
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID:</li>
-                            <li class="list-group-item">Email: <a href="mailto:"></a></li>
-                            <li class="list-group-item">School:</li>
+                            <li class="list-group-item">ID: ${data[4].getId()}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${data[4].getEmail()}">${data[4].getEmail()}</a></li>
+                            <li class="list-group-item">School: ${data[4].getSchool()}</li>
                         </ul>
                     </div>
                 </div>
@@ -109,3 +109,5 @@ function generateHTML(data){
 </html>
     `;
 }
+
+module.exports = generateHTML;

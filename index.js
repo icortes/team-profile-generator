@@ -7,7 +7,7 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
 //array of employees
-const Employees = [];
+const employees = [];
 
 //questions
 const questions = [{
@@ -131,3 +131,24 @@ const questions = [{
         required: "true"
     }
 ]
+
+function start() {
+    inquirer.prompt(questions)
+        .then(response => {
+            const manager = new Manager(response.managerName, response.managerId, response.managerEmail, response.managerOffice);
+            const engineerOne = new Engineer(response.engineerOneName, response.engineerOneId, response.engineerOneEmail, response.engineerOneGithub);
+            const engineerTwo = new Engineer(response.engineerTwoName, response.engineerTwoId, response.engineerTwoEmail, response.engineerTwoGithub);
+            const engineerThree = new Engineer(response.engineerThreeName, response.engineerThreeId, response.engineerThreeEmail, response.engineerThreeGithub);
+            const intern = new Intern(response.internName, response.internId, response.internEmail, response.internSchool);
+
+            employees = [manager, engineerOne, engineerTwo, engineerThree, intern];
+
+            const html = generateHTML(employees);
+
+        })
+        .catch(err => {
+            throw new Error(err);
+        })
+};
+
+start();
