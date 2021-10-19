@@ -1,6 +1,3 @@
-const { COMPARISON_BINARY_OPERATORS } = require("@babel/types");
-const { it, expect } = require("@jest/globals");
-const { describe } = require("yargs");
 const Manager = require("../lib/Manager");
 
 describe("Manager", () => {
