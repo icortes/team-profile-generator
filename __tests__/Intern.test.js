@@ -24,6 +24,6 @@ describe("Intern", () => {
             const intern = new Intern("Jeff", 3, "email@school.com", "Berkeley");
 
             expect(intern.getRole()).toEqual("Intern");
-        })
-    })
+        });
+    });
 });
