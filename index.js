@@ -7,7 +7,7 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
 //array of employees
-const employees = [];
+var employees = [];
 
 //questions
 const questions = [{
@@ -145,6 +145,10 @@ function start() {
 
             const html = generateHTML(employees);
 
+            fs.writeFile(`./dist/${manager.getName()}Team.html`, html, (err) => {
+                if(err) throw err;
+                console.log("The file has been written!");
+            })
         })
         .catch(err => {
             throw new Error(err);
