@@ -2,6 +2,8 @@
 
 This application takes in information about employees on a software engineering team, then generates a webpage that displays summaries for each person.
 
+![image of webpage when it's generated](./assets/img/Screenshot.jpg)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -59,6 +61,8 @@ You will also need a github account. Get one [here](https://github.com/).
 4. Open explorer to see your file.
         
         explorer .
+
+    Click [here](https://watch.screencastify.com/v/hbvccUshL2HWqvNZuqfc) to see the app in action.
 
 ### Test
 
